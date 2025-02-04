@@ -111,7 +111,7 @@ console.log(`Customer Located: ${findCustomer}`);
 function calculateTax(amount, taxRate ) { 
     return amount * taxRate; // Return the calculated tax 
 };
-let tax =caculateTax(15000, 0.05) // Ammount 15,000, tax rate 5%
+let tax = calculateTax(15000, 0.05) // Ammount 15,000, tax rate 5%
 
 // Log using a template literal.
 console.log(`Tax: $${tax}`); 
@@ -121,7 +121,7 @@ console.log(`Tax: $${tax}`);
 // Task 9: Function Expression
 // Declare a function expression applyDiscount(price, discount)
 const applyDiscount = function(price, discount) {
-    return price - (price * (discountPercent / 100)); // Return the discounted price
+    return price - (price * (discount / 100)); // Return the discounted price
 };
 
 let discountPrice = applyDiscount(1000, 20) // Price at $1000, dicount of 20%
@@ -131,9 +131,10 @@ console.log(`Discounted Price: $${discountPrice}`); // Result logged using a tem
 
 // Task 10: Arrow Functions 
 // Write an arrow function calculatePoints(purchaseAmount)
-const calculatePoints = (purchaseAmount) => {  // Return 1 point per $10 spent and log the result.
+const calculatePoints = (purchaseAmount) => { 
+    return (purchaseAmount/ 10); // Return 1 point per $10 spent and log the result.
 };
-let points = calculatePoints(100); // $100 Dollars Spent
+let points = calculatePoints(440); // $440 Dollars Spent
 
 console.log(`Points Earned for Rewards: ${points}`); // Log the result to the console using a template literal.
 
