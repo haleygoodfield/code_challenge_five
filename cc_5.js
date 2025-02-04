@@ -52,6 +52,7 @@ console.log("Items in Shopping Cart:", cartItems);
 
 
 // Task 4: Map Method
+
 // Declare an array prices 
 const prices = [60, 90, 70];
 
@@ -61,4 +62,15 @@ const discountedPrices = prices.map(prices => prices * discount);
 
 // Log the new discounted prices to the console
 console.log("Discounted Prices: $", discountedPrices);
+
+// Task 5: Filter Method
+
+// Declare an array inventory with at least five product quantities
+const inventory = [0, 7, 13, 0, 25];
+
+// Use the .filter() method to remove products with zero stock
+const products = inventory.filter(quantity => quantity > 0);
+
+// Log the filtered array to the console
+console.log("Products Availble:", products);
 
