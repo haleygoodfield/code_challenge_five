@@ -115,3 +115,15 @@ function calculateTax(amount, taxRate ) {
 
 // Something is done wrong here, nothing is showing up in the console. 
 
+
+
+// Task 9: Function Expression
+// Declare a function expression applyDiscount(price, discount)
+const applyDiscount = function(price, discount) {
+    const discountedPricce = price - (price * (discount /100)); // Return the discounted price and log the result
+    console.log(`Dicounted Price: $${discountedPrices.toFixed(2)}`);
+    return discountedPrice;
+};
+applyDiscount(500, .05) // $500 at 5% discount
+
+
