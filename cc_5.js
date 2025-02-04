@@ -54,7 +54,7 @@ console.log("Items in Shopping Cart:", cartItems);
 
 // Task 4: Map Method
 
-// Declare an array prices 
+// Declare an array of prices 
 const prices = [60, 90, 70];
 
 // Use the .map() method to apply a 10% discount to each price
@@ -75,7 +75,7 @@ const inventory = [0, 7, 13, 0, 25];
 const products = inventory.filter(quantity => quantity > 0);
 
 // Log the filtered array to the console
-console.log("Products Availble:", products);
+console.log(`Products Availble: ${products}`);
 
  
 
@@ -89,4 +89,18 @@ const totalRevenue = sales.reduce((accumulator, currentValue) => accumulator + c
 
 // Log the result to the console
 console.log(`Total Revenue: $${totalRevenue}`);
+
+
+
+// Task 7: find() Method 
+
+// Declare an array of customers 
+const customers = ["Jane", "Jana", "Joel", "Joe"];
+
+// Use the .find() method to locate the customer "Joel"
+const findCustomer = customers.find(customer => customer == "Joel");
+
+// Log the result to the console
+console.log(`Customer Located: ${findCustomer}`);
+
 
