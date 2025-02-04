@@ -51,6 +51,7 @@ cartItems.shift();
 console.log("Items in Shopping Cart:", cartItems);
 
 
+
 // Task 4: Map Method
 
 // Declare an array prices 
@@ -63,6 +64,8 @@ const discountedPrices = prices.map(prices => prices * discount);
 // Log the new discounted prices to the console
 console.log("Discounted Prices: $", discountedPrices);
 
+
+
 // Task 5: Filter Method
 
 // Declare an array inventory with at least five product quantities
@@ -73,4 +76,17 @@ const products = inventory.filter(quantity => quantity > 0);
 
 // Log the filtered array to the console
 console.log("Products Availble:", products);
+
+ 
+
+// Task 6: Reduce Method
+
+// Declare an array sales 
+const sales = [920, 940, 960, 980];
+
+// Use the .reduce() method to calculate total revenue
+const totalRevenue = sales.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+// Log the result to the console
+console.log(`Total Revenue: $${totalRevenue}`);
 
