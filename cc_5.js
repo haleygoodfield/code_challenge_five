@@ -49,3 +49,16 @@ cartItems.shift();
 
 // Log the final array to the console
 console.log("Items in Shopping Cart:", cartItems);
+
+
+// Task 4: Map Method
+// Declare an array prices 
+const prices = [60, 90, 70];
+
+// Use the .map() method to apply a 10% discount to each price
+const discount = 0.9 // 10% discount 
+const discountedPrices = prices.map(prices => prices * discount); 
+
+// Log the new discounted prices to the console
+console.log("Discounted Prices: $", discountedPrices);
+
