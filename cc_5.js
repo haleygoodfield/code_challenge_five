@@ -104,3 +104,14 @@ const findCustomer = customers.find(customer => customer == "Joel");
 console.log(`Customer Located: ${findCustomer}`);
 
 
+// FIX TASK 8!! SOMETHING IS WRONG!!
+// Task 8: Function Declaration
+
+// Write a function calculateTax(amount, taxRate).
+function calculateTax(amount, taxRate ) {
+    calculateTax = (15000, 0.05);
+    console.log(`Tax: $${amount * taxRate}`);
+};
+
+// Something is done wrong here, nothing is showing up in the console. 
+
